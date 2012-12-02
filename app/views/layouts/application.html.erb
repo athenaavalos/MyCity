@@ -39,6 +39,9 @@
          <%= link_to 'My Account', edit_user_registration_path %>
     </li>
   <% end %>
+    <li <% if current_page?(pages_about_path) -%>class="active"<% end -%>>
+         <%= link_to 'About', pages_about_path %>
+    </li>
 
  </ul>
 

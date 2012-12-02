@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
-#map{width: 70%;height: 400px;border: 1px solid #000;}
+#map{width: 70%;height: 600px;border: 1px solid #000;}
 #home-heading
 {
 color: white;
@@ -36,3 +36,4 @@ margin-left:550px;
 .info { width: 250px;
 }
 #main-image{align: center; margin-top: 70px; margin-left: 340px;}
+

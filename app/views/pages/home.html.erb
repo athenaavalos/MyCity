@@ -4,7 +4,7 @@
 </div>
 </div>
 
-<div id="formalign">
+<div id="formalign" class="hero-unit2">
         <!--h4>Datasets:</h4-->
 	<% i = 0 %>
 	<script>
@@ -12,11 +12,11 @@
 	</script>
     
 	<% for dataset in @datasets %> 
-		
+		&nbsp;&nbsp;&nbsp;&nbsp;
 		<% @datasetcheckvaues[i] =  i %>
 		
         <%= check_box_tag @datasetcheckvaues[i], value=@datasetcheckvaues[i], false %> <%= dataset.name %>
-        <br><br>
+        <br><br> 
 		<script>
 		 	stuff['<%= i %>'] = '<%= dataset.source_link %>'
 			total_data_sets = '<%= @datasets.length %>';
@@ -24,8 +24,8 @@
 		<% i = i+1 %>
 		
 
-	<% end %>
-     <%= tag "input", { "type" => "button", "value" => "Display", "onclick" => "show()" } %>
+	<% end %><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
+     <%= tag "input", { "type" => "button", "value" => "Display", "onclick" => "show()", "class" => "btn btn-info btn-medium mybutton"} %>
 </div>
 <% else %>
   <%= link_to "sign in", new_user_session_path %>
