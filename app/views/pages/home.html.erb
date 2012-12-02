@@ -27,11 +27,14 @@
 	<% end %><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
      <%= tag "input", { "type" => "button", "value" => "Display", "onclick" => "show()", "class" => "btn btn-info btn-medium mybutton"} %>
 </div>
-<% else %>
-  <%= link_to "sign in", new_user_session_path %>
-<div id='main-image'>
-<%= image_tag "ardi_logo.jpeg", {:width => 550, :height => 350} %>
+
+
+<%else %>
+  <!--<%= link_to "sign in", new_user_session_path %> -->
+<div id='main-image' class="home-heading">
+<%= image_tag "abq_logo.jpeg", {:width => 550, :height => 350} %>
+<br />
+<h2><%= link_to "Sign up", new_user_registration_path, :class => "btn btn-info home-heading" %></h2> 
 </div>
-<h1 id='home-heading'><%= link_to "Sign up", new_user_registration_path %></h1> 
 <% end %>
 
