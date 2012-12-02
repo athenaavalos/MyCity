@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My City</title>
+  <title>Hello, Albuquerque!</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -19,10 +19,10 @@
     <div class="container">
     <ul class="nav">
   
-    <%= link_to 'AbQCity', pages_home_path, :class => "brand" %>
+    <%= link_to 'Hello, Albuquerque!', pages_home_path, :class => "brand" %>
     
     <li <% if current_page?(pages_home_path) -%>class="active"<% end -%>>
-        <%= link_to 'ABQ CITY Data', pages_home_path %>
+        <%= link_to 'Hello, Albuquerque!', pages_home_path %>
     </li>
    
     <li <% if current_page?(issues_path) -%>class="active"<% end -%>>
@@ -40,7 +40,16 @@
     </li>
   <% end %>
     <li <% if current_page?(pages_about_path) -%>class="active"<% end -%>>
-         <%= link_to 'About', pages_about_path %>
+         <%= link_to 'About Us', pages_about_path %>
+    </li>
+    <li <% if current_page?(pages_contact_path) -%>class="active"<% end -%>>
+    	<%= link_to 'Contact Us', pages_contact-path %>
+    </li>
+    <li <% if current_page?(pages_how_path) -%>class="active"<% end -%>>
+    	<%= link_to 'How To Use', pages_how_path %>
+    </li>
+    <li <% if current.page?(pages_future_path) -%>class="active"<% end -%>
+    	<%= link_to 'Looking Towards The Future', pages_future_path %>
     </li>
 
  </ul>
